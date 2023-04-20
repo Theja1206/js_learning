@@ -1,1 +1,2 @@
 a text file 
+another line added to the file
