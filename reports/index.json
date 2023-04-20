@@ -1,0 +1,146 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-04-05T15:08:21.503Z",
+    "end": "2023-04-05T15:08:21.511Z",
+    "duration": 8,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3450ec40-7ea0-4e7b-9b35-969dea71f56c",
+      "title": "",
+      "fullFile": "C:\\Users\\divya\\cucumber_BDD\\specs\\calculator.js",
+      "file": "\\specs\\calculator.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9c5442dd-a20a-42a3-bcab-1064566d32f6",
+          "title": "Calculator test",
+          "fullFile": "C:\\Users\\divya\\cucumber_BDD\\specs\\calculator.js",
+          "file": "\\specs\\calculator.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Addition",
+              "fullTitle": "Calculator test Addition",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const result=calcobj.add(10,20)\nassert.equal(result,30,\"this result  is not valid \")",
+              "err": {},
+              "uuid": "9d1d5b9a-9929-4262-a0df-7cf9ad41a52c",
+              "parentUUID": "9c5442dd-a20a-42a3-bcab-1064566d32f6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Subtraction",
+              "fullTitle": "Calculator test Subtraction",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const result=calcobj.sub(10,20)\n        assert.equal(result,-10,\"this result  is not valid \")",
+              "err": {},
+              "uuid": "c2713853-57b9-4f22-af14-d7b1151d39cf",
+              "parentUUID": "9c5442dd-a20a-42a3-bcab-1064566d32f6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Division",
+              "fullTitle": "Calculator test Division",
+              "timedOut": false,
+              "duration": 1,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const result=calcobj.div(10,20)\n       // assert.equal(result,6,\"this result  is not valid \")\n       expect(result).to.equal(6)",
+              "err": {
+                "message": "AssertionError: expected 10 to equal 6",
+                "estack": "AssertionError: expected 10 to equal 6\n    at Context.<anonymous> (file:///C:/Users/divya/cucumber_BDD/specs/calculator.js:25:26)\n    at process.processImmediate (node:internal/timers:476:21)",
+                "diff": "- 10\n+ 6\n"
+              },
+              "uuid": "0b076e70-6199-4e5f-9786-3108012058c2",
+              "parentUUID": "9c5442dd-a20a-42a3-bcab-1064566d32f6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9d1d5b9a-9929-4262-a0df-7cf9ad41a52c",
+            "c2713853-57b9-4f22-af14-d7b1151d39cf"
+          ],
+          "failures": [
+            "0b076e70-6199-4e5f-9786-3108012058c2"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "index",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports",
+        "reportFilename": "index"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "default":{
+        "publishQuiet":true,
+        "format":[
+            "json:reports/newreport.json",
+            "html:reports/newhtml.html"
+        ]
+    }
+}

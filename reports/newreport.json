@@ -1,0 +1,340 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "author-and-books;correct-non-zero-number-of-books-found-by-author",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Correct non-zero number of books found by author",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "title",
+                      "author"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "The Devil in the white city",
+                      "Erik Larson"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "The Lion,the Withc and the Wardrobe",
+                      "C.S.Lewis"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "In the Garden of Beasts",
+                      "Erik Larson"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I have the following books in store",
+            "match": {
+              "location": "file:\\C:\\Users\\divya\\cucumber_BDD\\features\\support\\author_stepdef.mjs:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 748600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I search for books by author 'Erik Larson'",
+            "match": {
+              "location": "file:\\C:\\Users\\divya\\cucumber_BDD\\features\\support\\author_stepdef.mjs:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 381699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I find 2 books",
+            "match": {
+              "location": "file:\\C:\\Users\\divya\\cucumber_BDD\\features\\support\\author_stepdef.mjs:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1112800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "author-and-books",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Author and books",
+    "tags": [],
+    "uri": "features\\Author.feature"
+  },
+  {
+    "description": "    Multiple Scenario to vaildate the arithmetic operations",
+    "elements": [
+      {
+        "description": "",
+        "id": "calculate-the-validations;adding-two-numbers",
+        "keyword": "Scenario Outline",
+        "line": 23,
+        "name": "Adding two numbers",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "the numbers are 100,100",
+            "match": {
+              "location": "file:\\C:\\Users\\divya\\cucumber_BDD\\features\\support\\steps.mjs:3"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 220600,
+              "error_message": "TypeError: this.setValues is not a function\n    at Increment.<anonymous> (file:///C:/Users/divya/cucumber_BDD/features/support/steps.mjs:4:10)\n    at Object.run (C:\\Users\\divya\\cucumber_BDD\\node_modules\\@cucumber\\cucumber\\lib\\user_code_runner.js:24:27)\n    at Object.run (C:\\Users\\divya\\cucumber_BDD\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\step_runner.js:51:59)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async TestCaseRunner.invokeStep (C:\\Users\\divya\\cucumber_BDD\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\test_case_runner.js:94:16)\n    at async TestCaseRunner.runStep (C:\\Users\\divya\\cucumber_BDD\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\test_case_runner.js:243:26)\n    at async C:\\Users\\divya\\cucumber_BDD\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\test_case_runner.js:174:44\n    at async TestCaseRunner.aroundTestStep (C:\\Users\\divya\\cucumber_BDD\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\test_case_runner.js:119:32)\n    at async TestCaseRunner.runAttempt (C:\\Users\\divya\\cucumber_BDD\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\test_case_runner.js:157:13)\n    at async TestCaseRunner.run (C:\\Users\\divya\\cucumber_BDD\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\test_case_runner.js:135:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "numbers are added",
+            "match": {
+              "location": "file:\\C:\\Users\\divya\\cucumber_BDD\\features\\support\\onestep.mjs:3"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "result should be 200",
+            "match": {
+              "location": "file:\\C:\\Users\\divya\\cucumber_BDD\\features\\support\\steps.mjs:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "calculate-the-validations;adding-two-numbers",
+        "keyword": "Scenario Outline",
+        "line": 24,
+        "name": "Adding two numbers",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "the numbers are 391,100",
+            "match": {
+              "location": "file:\\C:\\Users\\divya\\cucumber_BDD\\features\\support\\steps.mjs:3"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 186100,
+              "error_message": "TypeError: this.setValues is not a function\n    at Increment.<anonymous> (file:///C:/Users/divya/cucumber_BDD/features/support/steps.mjs:4:10)\n    at Object.run (C:\\Users\\divya\\cucumber_BDD\\node_modules\\@cucumber\\cucumber\\lib\\user_code_runner.js:24:27)\n    at Object.run (C:\\Users\\divya\\cucumber_BDD\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\step_runner.js:51:59)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async TestCaseRunner.invokeStep (C:\\Users\\divya\\cucumber_BDD\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\test_case_runner.js:94:16)\n    at async TestCaseRunner.runStep (C:\\Users\\divya\\cucumber_BDD\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\test_case_runner.js:243:26)\n    at async C:\\Users\\divya\\cucumber_BDD\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\test_case_runner.js:174:44\n    at async TestCaseRunner.aroundTestStep (C:\\Users\\divya\\cucumber_BDD\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\test_case_runner.js:119:32)\n    at async TestCaseRunner.runAttempt (C:\\Users\\divya\\cucumber_BDD\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\test_case_runner.js:157:13)\n    at async TestCaseRunner.run (C:\\Users\\divya\\cucumber_BDD\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\test_case_runner.js:135:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "numbers are added",
+            "match": {
+              "location": "file:\\C:\\Users\\divya\\cucumber_BDD\\features\\support\\onestep.mjs:3"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "result should be 491",
+            "match": {
+              "location": "file:\\C:\\Users\\divya\\cucumber_BDD\\features\\support\\steps.mjs:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "calculate-the-validations",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Calculate the validations",
+    "tags": [],
+    "uri": "features\\calculte.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "identifying--the-array-length;count-array-elements",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Count Array elements",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": ":array is empty",
+            "match": {
+              "location": "file:\\C:\\Users\\divya\\cucumber_BDD\\features\\support\\stepsofarray.mjs:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1049600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": ":length of array should be zero",
+            "match": {
+              "location": "file:\\C:\\Users\\divya\\cucumber_BDD\\features\\support\\stepsofarray.mjs:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 187999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": ":the array is loaded with elements 2,3,4",
+            "match": {
+              "location": "file:\\C:\\Users\\divya\\cucumber_BDD\\features\\support\\stepsofarray.mjs:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 718500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": ":the length of array should be 3",
+            "match": {
+              "location": "file:\\C:\\Users\\divya\\cucumber_BDD\\features\\support\\stepsofarray.mjs:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 309199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "identifying--the-array-length",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Identifying  the Array Length",
+    "tags": [],
+    "uri": "features\\count_array.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "increasing-the-value-of-a-number;incrementing-a-number",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Incrementing a number",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": ":number is 5",
+            "match": {
+              "location": "file:\\C:\\Users\\divya\\cucumber_BDD\\features\\support\\Increment.mjs:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 157400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": ":the number is incremented by 3",
+            "match": {
+              "location": "file:\\C:\\Users\\divya\\cucumber_BDD\\features\\support\\Increment.mjs:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 318700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": ":the number should be 8",
+            "match": {
+              "location": "file:\\C:\\Users\\divya\\cucumber_BDD\\features\\support\\Increment.mjs:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 212800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "increasing-the-value-of-a-number",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Increasing the value of a number",
+    "tags": [],
+    "uri": "features\\Increment.feature"
+  }
+]

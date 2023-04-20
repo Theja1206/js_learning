@@ -1,0 +1,7 @@
+{
+    "cucumberautocomplete.steps": [
+        "features/support/*.mjs"
+        
+    ],
+    "cucumberautocomplete.strictGherkinCompletion": true
+}
