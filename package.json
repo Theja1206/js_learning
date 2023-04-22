@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test:sample":".\\node_modules\\.bin\\cucumber-js"
+    "test:sample":".\\node_modules\\.bin\\cucumber-js",
+    "report":"node reports.mjs"
   },
   "keywords": [],
   "author": "",
