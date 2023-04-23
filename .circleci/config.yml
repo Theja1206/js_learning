@@ -1,0 +1,25 @@
+version: 2.1
+jobs:
+  run_tests:
+    docker:
+      - image: cimg/node:18.14.1
+    steps:
+      - checkout
+      - run:
+          name: Install Deps
+          command: |
+            npm install
+      - run:
+          name: Run tests
+          command: |
+            npm run test:sample
+      - run:
+          name: Generate Reports
+          command: |
+            npm run report
+      - store_artifacts:
+          path: reports
+workflows:
+  execute_tests:
+    jobs:
+      - run_tests
