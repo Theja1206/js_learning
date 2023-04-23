@@ -12,7 +12,7 @@ jobs:
       - run:
           name: Run tests
           command: |
-            npm run test:sample
+            npm test
       - run:
           name: Generate Reports
           command: |
