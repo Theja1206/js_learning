@@ -12,11 +12,8 @@ jobs:
       - run:
           name: Run tests
           command: |
-            npm test
-      - run:
-          name: Generate Reports
-          command: |
-            npm run report
+            npm run mocha
+     
       - store_artifacts:
           path: reports
 workflows:
