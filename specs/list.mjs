@@ -18,10 +18,10 @@ describe("Names and assertions", () => {
 
   it("Filter the name Jack and assert length ", () => {
 
-    let n1=name.filter(newname =>newname[2])
+    let n1=name.filter(newname =>newname.startsWith("Jack"))
     let lngth=n1.length
 
-    assert.equal(4,lngth,"length of a string are equal")
+    assert.equal(2,lngth,"length of a string are equal")
 
   });
 });
