@@ -1,15 +1,15 @@
 {
   "stats": {
-    "suites": 2,
-    "tests": 6,
-    "passes": 3,
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
     "pending": 0,
-    "failures": 3,
-    "start": "2023-04-27T13:38:49.283Z",
-    "end": "2023-04-27T13:38:49.306Z",
-    "duration": 23,
-    "testsRegistered": 6,
-    "passPercent": 50,
+    "failures": 1,
+    "start": "2023-04-27T20:43:43.282Z",
+    "end": "2023-04-27T20:43:43.296Z",
+    "duration": 14,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,98 +18,16 @@
   },
   "results": [
     {
-      "uuid": "d119536e-ffcc-408f-9e9d-b90cc5505de4",
+      "uuid": "65d52d7f-a091-4b4d-afc1-12367c1b7914",
       "title": "",
-      "fullFile": "",
-      "file": "",
+      "fullFile": "C:\\Users\\divya\\cucumber_BDD\\specs\\list.mjs",
+      "file": "\\specs\\list.mjs",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "84b74bed-587d-4fff-a611-c7b9ef53853e",
-          "title": "Calculator test",
-          "fullFile": "C:\\Users\\divya\\cucumber_BDD\\specs\\calculator.js",
-          "file": "\\specs\\calculator.js",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Addition",
-              "fullTitle": "Calculator test Addition",
-              "timedOut": false,
-              "duration": 0,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "const result = calcobj.add(10, 20)\nassert.equal(result, 30, \"this result  is not valid \")",
-              "err": {},
-              "uuid": "ae92d37b-4c78-4be9-a780-3a997de1e669",
-              "parentUUID": "84b74bed-587d-4fff-a611-c7b9ef53853e",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Subtraction",
-              "fullTitle": "Calculator test Subtraction",
-              "timedOut": false,
-              "duration": 0,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "const result = calcobj.sub(10, 20)\n        assert.equal(result, -10, \"this result  is not valid \")",
-              "err": {},
-              "uuid": "5675906b-92dc-4088-85ff-9c0851d929f1",
-              "parentUUID": "84b74bed-587d-4fff-a611-c7b9ef53853e",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Division",
-              "fullTitle": "Calculator test Division",
-              "timedOut": false,
-              "duration": 2,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
-              "pending": false,
-              "context": null,
-              "code": "const result = calcobj.div(10, 20)\n        // assert.equal(result,6,\"this result  is not valid \")\n        expect(result).to.equal(6)",
-              "err": {
-                "message": "AssertionError: expected 10 to equal 6",
-                "estack": "AssertionError: expected 10 to equal 6\n    at Context.<anonymous> (file:///C:/Users/divya/cucumber_BDD/specs/calculator.js:25:27)\n    at process.processImmediate (node:internal/timers:476:21)",
-                "diff": "- 10\n+ 6\n"
-              },
-              "uuid": "596839a4-6a79-4edf-92ca-564a7aef3798",
-              "parentUUID": "84b74bed-587d-4fff-a611-c7b9ef53853e",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "ae92d37b-4c78-4be9-a780-3a997de1e669",
-            "5675906b-92dc-4088-85ff-9c0851d929f1"
-          ],
-          "failures": [
-            "596839a4-6a79-4edf-92ca-564a7aef3798"
-          ],
-          "pending": [],
-          "skipped": [],
-          "duration": 2,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        },
-        {
-          "uuid": "aeaea7ed-2a2c-47d7-a57b-acc15547bbe0",
+          "uuid": "5a8605b1-ca3c-4ae9-bc2e-9aa6e7877fd9",
           "title": "Names and assertions",
           "fullFile": "C:\\Users\\divya\\cucumber_BDD\\specs\\list.mjs",
           "file": "\\specs\\list.mjs",
@@ -120,7 +38,7 @@
               "title": "Length of names list is 5",
               "fullTitle": "Names and assertions Length of names list is 5",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -129,8 +47,8 @@
               "context": null,
               "code": "let str=null\n    str=name.length\n    assert.equal(5,str,\"strings length should be equal\")",
               "err": {},
-              "uuid": "ccd6d9bc-c18b-4c15-a1f6-d30eaa91fcdc",
-              "parentUUID": "aeaea7ed-2a2c-47d7-a57b-acc15547bbe0",
+              "uuid": "089983d2-4fb4-4126-9204-41ea3086214c",
+              "parentUUID": "5a8605b1-ca3c-4ae9-bc2e-9aa6e7877fd9",
               "isHook": false,
               "skipped": false
             },
@@ -138,7 +56,7 @@
               "title": "list contains Daniel",
               "fullTitle": "Names and assertions list contains Daniel",
               "timedOut": false,
-              "duration": 2,
+              "duration": 3,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -151,8 +69,8 @@
                 "estack": "AssertionError: expected [ 'Jackson', 'Rob', 'Jack', …(2) ] to include 'Daniel'\n    at Context.<anonymous> (file:///C:/Users/divya/cucumber_BDD/specs/list.mjs:15:21)\n    at process.processImmediate (node:internal/timers:476:21)",
                 "diff": null
               },
-              "uuid": "36653402-0492-4b48-ac31-871e84939103",
-              "parentUUID": "aeaea7ed-2a2c-47d7-a57b-acc15547bbe0",
+              "uuid": "7815731d-55d4-4025-beac-294f2de4144c",
+              "parentUUID": "5a8605b1-ca3c-4ae9-bc2e-9aa6e7877fd9",
               "isHook": false,
               "skipped": false
             },
@@ -160,36 +78,32 @@
               "title": "Filter the name Jack and assert length ",
               "fullTitle": "Names and assertions Filter the name Jack and assert length ",
               "timedOut": false,
-              "duration": 1,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
-              "code": "let n1=name.filter(newname =>newname[2])\n    let lngth=n1.length\n    assert.equal(4,lngth,\"length of a string are equal\")",
-              "err": {
-                "message": "AssertionError: length of a string are equal: expected 4 to equal 5",
-                "estack": "AssertionError: length of a string are equal: expected 4 to equal 5\n    at Context.<anonymous> (file:///C:/Users/divya/cucumber_BDD/specs/list.mjs:24:12)\n    at process.processImmediate (node:internal/timers:476:21)",
-                "diff": "- 4\n+ 5\n"
-              },
-              "uuid": "004aeb14-e2bb-4a41-95c3-3babe75d262d",
-              "parentUUID": "aeaea7ed-2a2c-47d7-a57b-acc15547bbe0",
+              "code": "let n1=name.filter(newname =>newname.startsWith(\"Jack\"))\n    let lngth=n1.length\n    assert.equal(2,lngth,\"length of a string are equal\")",
+              "err": {},
+              "uuid": "13e267a3-9de8-4db2-90f8-79a4bc9a67cc",
+              "parentUUID": "5a8605b1-ca3c-4ae9-bc2e-9aa6e7877fd9",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ccd6d9bc-c18b-4c15-a1f6-d30eaa91fcdc"
+            "089983d2-4fb4-4126-9204-41ea3086214c",
+            "13e267a3-9de8-4db2-90f8-79a4bc9a67cc"
           ],
           "failures": [
-            "36653402-0492-4b48-ac31-871e84939103",
-            "004aeb14-e2bb-4a41-95c3-3babe75d262d"
+            "7815731d-55d4-4025-beac-294f2de4144c"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 3,
+          "duration": 4,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -3,6 +3,6 @@
     "reporter-options":[
         "reportDir=reports",
         "reportFilename=index"
-    ],
-    "spec": "specs"
+    ]
+    
 }
