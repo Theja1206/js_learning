@@ -7,7 +7,7 @@
   "scripts": {
     "test": "./node_modules/.bin/cucumber-js",
     "test:sample":".\\node_modules\\.bin\\cucumber-js",
-    "mocha":".\\node_modules\\.bin\\mocha specs\\list.mjs",
+    "mocha":"./node_modules/.bin/mocha specs/list.mjs",
     "report":"node reports.mjs"
   },
   "keywords": [],
