@@ -27,6 +27,7 @@ Then("I find {int} books",function(number)
    // expect(value).to.equal("Erik Larson")
 
    expect(retrieve.length).to.equal(number)
+   
  
-    //console.log("total number of books by author Erik Larson is :"+count)
+    console.log("total number of books by author Erik Larson is "+number)
 })
